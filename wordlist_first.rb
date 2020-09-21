@@ -9,8 +9,8 @@ word = ARGV[0]
 
 def get_words(file, word)
     Parallel.each(File.open(file,"r").each_line) do |line|
-        if line.match word
-          puts "found " + word
+        if lines.start_with?(word)
+          puts "found " + word + " in " + lines
         end
     end
 end 
