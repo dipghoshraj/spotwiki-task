@@ -4,9 +4,8 @@
 gem "parallel"
 require 'parallel'
 
-
 file= "wordlist.txt"
-word = "troy"
+word = ARGV[0]
 
 def get_words(file, word)
     Parallel.each(File.open(file,"r").each_line) do |line|
