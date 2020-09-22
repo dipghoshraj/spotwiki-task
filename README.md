@@ -12,7 +12,7 @@ To find the solution for this task I have decided to use liner searching with th
 ### Installation
 
 Install the dependencies and devDependencies and start the server.
-You need to chnage the source path in the setup.sh 
+You need to change the source path in the setup.sh 
 ```sh
 source /usr/local/rvm/scripts/rvm
 ```
