@@ -22,5 +22,3 @@ def get_included_words(file, word)
     end
   end
 end 
-
-# get_words(file, word)
