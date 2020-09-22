@@ -25,13 +25,13 @@ $ sh setup.sh
 
 ### Run the solution
  Find the wrod which start with your searching terms [consider searching term as -- dip]
-run the following command -->
+run the following command
 ```sh
 time ruby -r "./wordlist_first.rb" -e "get_words 'wordlist.txt', 'dip'"
 ```
 
 Find the words which includes your searching terms in any position of the line inn the file 
-run the following command -->
+run the following command
 ```sh
 time ruby -r "./wordlist_first.rb" -e "get_included_words 'wordlist.txt', 'dip'"
 ```
