@@ -4,6 +4,6 @@ class AccountController < ApplicationController
     def index
     end
 
-    def feed
+    def show
     end
 end
