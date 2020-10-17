@@ -1,5 +1,5 @@
 class AccountController < ApplicationController
-    # before_action : authenticate_account!
+    before_action : authenticate_users!
 
     def index
     end
