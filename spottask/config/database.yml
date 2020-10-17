@@ -27,7 +27,7 @@ development:
   database: spottas_development
   pool: 5
   username: spottask
-  password: spottask_db
+  password: password1
 
 
   # The specified database role being used to connect to postgres.
@@ -66,7 +66,7 @@ test:
   database: spottas_test
   pool: 5
   username: spottask
-  password: spottask_db
+  password: password1
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
