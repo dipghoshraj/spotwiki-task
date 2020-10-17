@@ -1,2 +1,9 @@
 class AccountController < ApplicationController
+    before_action : authenticate_account!
+
+    def index
+    end
+
+    def feed
+    end
 end
