@@ -1,1 +1,11 @@
 <p> feed page is</p>
+
+<%= form_tag :action => 'create' do %>
+    <p>Enter Text:
+   <%= text_field_tag 'reference', @post %></p>
+
+   <p> Enter Image URL:
+   <%= text_field_tag 'images', @post %></p>
+
+   <%= submit_tag ' Create Post' %>
+<% end %>  
