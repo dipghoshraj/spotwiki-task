@@ -3,5 +3,7 @@
 <div>
     <% @posts.each do |post| %>
         <p><%= post.reference %></p>
+        <p><%= post.images %></p>
+        <img src="<%= post.images%>" width="500" height="600">
     <% end %>
 </div>
