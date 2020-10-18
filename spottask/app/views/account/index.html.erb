@@ -1,1 +1,7 @@
 <p>Account index</p>
+
+<div>
+    <% @posts.each do |post| %>
+        <p><%= post.reference %></p>
+    <% end %>
+</div>
