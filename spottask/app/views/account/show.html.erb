@@ -1,11 +1,20 @@
-<p> feed page is</p>
+<div class="card">
+<h5 class="card-header info-color white-text text-center py-4">
+        <strong>Post your status</strong>
+    </h5>
 
-<%= form_tag :action => 'create' do %>
-    <p>Enter Text:
-   <%= text_field_tag 'reference', @post %></p>
-
-   <p> Enter Image URL:
-   <%= text_field_tag 'images', @post %></p>
-
-   <%= submit_tag ' Create Post' %>
-<% end %>  
+    <div class="card-body px-lg-5">
+        <div class="md-form mt-3">
+            <%= form_tag :action => 'create', class: "text-center", style: "color: #757575;"  do %>
+                <p>Enter Text:
+                <%= text_field_tag 'reference', @post, class: 'form-control' %></p>
+            
+                <p> Enter Image URL:
+                <%= text_field_tag 'images', @post, class: 'form-control' %></p>
+            
+                <%= submit_tag ' Create Post', class: 'btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect' %>
+            <% end %> 
+        </div>
+    </div>
+</div>
+ 
