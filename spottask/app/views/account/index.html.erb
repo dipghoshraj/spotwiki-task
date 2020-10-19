@@ -2,9 +2,19 @@
 <a href="/account/show">Share your experience</a>
 <div class="card" style="width: 18rem;">
     <% @posts.each do |post| %>
-        <img class="card-img-top" src="<%= post.images%>" alt="Card image cap">
+        <div class="view overlay">
+            <img class="card-img-top" src="<%= post.images%>" alt="Card image cap">
+            <a href="#!"> <div class="mask rgba-white-slight"></div></a>
+        </div>
         <div class="card-body">
-            <p><%= post.reference %></p>
+            <p></p>
+        </div>
+        <div class="card-body">
+            <!-- Title -->
+            <h4 class="card-title">My Experience</h4>
+            <!-- Text -->
+            <p class="card-text"><%= post.reference %></p>
         </div>
     <% end %>
 </div>
+
